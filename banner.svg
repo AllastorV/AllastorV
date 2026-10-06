@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="880" height="260" role="img" aria-label="hi, i'm alastor — a warm desk with a mug of coffee and a film reel">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b1d16"/>
+      <stop offset="1" stop-color="#3d2a1f"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="0.78" cy="0.15" r="0.75">
+      <stop offset="0" stop-color="#f6c177" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#e08e45" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#e08e45" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 0.9  0 0 0 0 0.8  0 0 0 0.06 0"/>
+    </filter>
+    <style>
+      .steam { fill: none; stroke: #f3e4d0; stroke-width: 3; stroke-linecap: round; opacity: 0; animation: rise 4s ease-in-out infinite; }
+      .s2 { animation-delay: 1.3s; } .s3 { animation-delay: 2.6s; }
+      @keyframes rise { 0% { opacity: 0; transform: translateY(8px); } 30% { opacity: .55; } 100% { opacity: 0; transform: translateY(-22px); } }
+      .reel { transform-origin: 140px 150px; animation: spin 14s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .flicker { animation: flick 6s ease-in-out infinite; }
+      @keyframes flick { 0%,100% { opacity: 1; } 48% { opacity: .92; } 50% { opacity: .82; } 52% { opacity: .95; } }
+      @media (prefers-reduced-motion: reduce) { .steam, .reel, .flicker { animation: none; } .steam { opacity: .4; } }
+      text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif; }
+    </style>
+  </defs>
+
+  <rect width="880" height="260" rx="18" fill="url(#wall)"/>
+  <rect class="flicker" width="880" height="260" rx="18" fill="url(#lamp)"/>
+
+  <!-- desk -->
+  <rect x="0" y="212" width="880" height="48" fill="#5a3b28"/>
+  <rect x="0" y="212" width="880" height="4" fill="#7a5236"/>
+
+  <!-- film reel -->
+  <!-- film strip leaving the reel and lying on the desk -->
+  <g>
+    <rect x="140" y="198" width="200" height="14" fill="#1f1611"/>
+    <g fill="#3d2a1f">
+      <rect x="150" y="200" width="6" height="3" rx="1"/><rect x="166" y="200" width="6" height="3" rx="1"/><rect x="182" y="200" width="6" height="3" rx="1"/><rect x="198" y="200" width="6" height="3" rx="1"/><rect x="214" y="200" width="6" height="3" rx="1"/><rect x="230" y="200" width="6" height="3" rx="1"/><rect x="246" y="200" width="6" height="3" rx="1"/><rect x="262" y="200" width="6" height="3" rx="1"/><rect x="278" y="200" width="6" height="3" rx="1"/><rect x="294" y="200" width="6" height="3" rx="1"/><rect x="310" y="200" width="6" height="3" rx="1"/><rect x="326" y="200" width="6" height="3" rx="1"/>
+      <rect x="150" y="207" width="6" height="3" rx="1"/><rect x="166" y="207" width="6" height="3" rx="1"/><rect x="182" y="207" width="6" height="3" rx="1"/><rect x="198" y="207" width="6" height="3" rx="1"/><rect x="214" y="207" width="6" height="3" rx="1"/><rect x="230" y="207" width="6" height="3" rx="1"/><rect x="246" y="207" width="6" height="3" rx="1"/><rect x="262" y="207" width="6" height="3" rx="1"/><rect x="278" y="207" width="6" height="3" rx="1"/><rect x="294" y="207" width="6" height="3" rx="1"/><rect x="310" y="207" width="6" height="3" rx="1"/><rect x="326" y="207" width="6" height="3" rx="1"/>
+    </g>
+  </g>
+
+  <!-- film reel: rim, five evenly spaced windows, hub -->
+  <g class="reel">
+    <circle cx="140" cy="150" r="58" fill="#1f1611"/>
+    <circle cx="140" cy="150" r="58" fill="none" stroke="#c9a27a" stroke-width="4"/>
+    <circle cx="140" cy="150" r="50" fill="none" stroke="#8a6a4c" stroke-width="2"/>
+    <g fill="#3d2a1f" stroke="#8a6a4c" stroke-width="2">
+      <circle cx="140" cy="120" r="13"/>
+      <circle cx="168.5" cy="140.7" r="13"/>
+      <circle cx="157.6" cy="174.3" r="13"/>
+      <circle cx="122.4" cy="174.3" r="13"/>
+      <circle cx="111.5" cy="140.7" r="13"/>
+    </g>
+    <circle cx="140" cy="150" r="11" fill="#c9a27a"/>
+    <circle cx="140" cy="150" r="4" fill="#1f1611"/>
+    <rect x="138" y="139" width="4" height="7" fill="#1f1611"/>
+  </g>
+
+  <!-- mug -->
+  <g transform="translate(700 150)">
+    <path class="steam" d="M20 -8 q -8 -14 0 -26 q 8 -12 0 -24"/>
+    <path class="steam s2" d="M36 -8 q -8 -14 0 -26 q 8 -12 0 -24"/>
+    <path class="steam s3" d="M52 -8 q -8 -14 0 -26 q 8 -12 0 -24"/>
+    <rect x="4" y="0" width="64" height="62" rx="10" fill="#d97757"/>
+    <path d="M68 14 h10 a14 14 0 0 1 0 28 h-10" fill="none" stroke="#d97757" stroke-width="7"/>
+    <rect x="4" y="0" width="64" height="9" rx="4" fill="#b85f43"/>
+  </g>
+
+  <text x="440" y="112" text-anchor="middle" font-size="44" fill="#f3e4d0">hi, i'm alastor</text>
+  <text x="440" y="150" text-anchor="middle" font-size="17" fill="#d8b48a" font-style="italic">small tools for video, vfx &amp; the machines that help</text>
+
+  <rect width="880" height="260" rx="18" filter="url(#grain)"/>
+</svg>
