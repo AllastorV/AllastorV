@@ -11,19 +11,19 @@ I spend most evenings somewhere between a timeline and a terminal: cutting video
 ### 🎞️ things i've made
 
 **[LoRA-Harvester](https://github.com/AllastorV/LoRA-Harvester)**: point it at a pile of video and get back a tidy, captioned LoRA dataset. It finds people, crops them, drops the blurry frames and sorts faces into characters.
-<sub>pytorch · yolov8 · sam2 · pyqt5</sub>
+<br><sub>pytorch · yolov8 · sam2 · pyqt5</sub>
 
 **[ntsCuda](https://github.com/AllastorV/ntsCuda)**: that warm, smeary VHS look, rendered on the GPU in real time. A CUDA fork of ntscQT.
-<sub>python · cuda</sub>
+<br><sub>python · cuda</sub>
 
 **[Color-Cohesion-Analyzer](https://github.com/AllastorV/Color-Cohesion-Analyzer)**: tells you whether a set of shots really shares a palette, laid out as a node blueprint.
-<sub>python · pyqt6</sub>
+<br><sub>python · pyqt6</sub>
 
 **[sd-forge-img2img-tagger](https://github.com/AllastorV/sd-forge-img2img-tagger)**: one click in Forge for WD14 tags and Florence-2 captions.
-<sub>python · stable diffusion forge</sub>
+<br><sub>python · stable diffusion forge</sub>
 
 ### 🕯️ the usual toolbox
 
-<sub>python · cuda · typescript · ffmpeg · blender · davinci resolve · after effects · premiere · mcp</sub>
+<br><sub>python · cuda · typescript · ffmpeg · blender · davinci resolve · after effects · premiere · mcp</sub>
 
 <p align="center"><sub>pull up a chair. issues and small PRs are always welcome.</sub></p>
