@@ -10,6 +10,9 @@ I spend most evenings somewhere between a timeline and a terminal: cutting video
 
 ### 🎞️ things i've made
 
+**[FIXER](https://github.com/AllastorV/Fixer)**: real film stocks for DaVinci Resolve, built from the manufacturers' datasheets. Forty-two Kodak, Fujifilm and Ilford stocks with print film, grain and halation, plus a reference match that grades your shot from a still. CUDA and OpenCL builds.
+<br><sub>c++ · cuda · opencl · openfx · python</sub>
+
 **[LoRA-Harvester](https://github.com/AllastorV/LoRA-Harvester)**: point it at a pile of video and get back a tidy, captioned LoRA dataset. It finds people, crops them, drops the blurry frames and sorts faces into characters.
 <br><sub>pytorch · yolov8 · sam2 · pyqt5</sub>
 
