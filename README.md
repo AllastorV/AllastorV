@@ -35,6 +35,10 @@ I spend most evenings somewhere between a timeline and a terminal: cutting video
 **[dikte](https://github.com/AllastorV/dikte)**: voice dictation for Windows from the tray, with a glass overlay and voice commands for Claude Code. A Windows port of [yusufipk/dikte](https://github.com/yusufipk/dikte).
 <br><sub>python</sub>
 
+### 🔥 a year at the desk
+
+<p align="center"><img src="contributions.svg" alt="Contribution calendar for the last year, from warm white on quiet days through yellow and orange to red on the busiest ones." width="100%"></p>
+
 ### 🕯️ the usual toolbox
 
 <br><sub>python · c++ · cuda · openfx · typescript · ffmpeg · blender · davinci resolve · after effects · premiere · mcp</sub>
